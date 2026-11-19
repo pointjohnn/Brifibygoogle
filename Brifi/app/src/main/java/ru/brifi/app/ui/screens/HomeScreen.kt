@@ -130,28 +130,24 @@ fun HomeScreen(
                 TopStatTile(
                     value = state.activeTasks.size.toString(),
                     valueColor = BrifiColors.ActiveCountAccent,
-                    caption = "Активных
-задач",
+                    caption = "Активных\nзадач",
                     modifier = Modifier.weight(1f)
                 )
                 TopStatTile(
                     value = state.deadlineTodayCount.toString(),
                     valueColor = BrifiColors.DeadlineTodayAccent,
-                    caption = "Дедлайн
-сегодня!",
+                    caption = "Дедлайн\nсегодня!",
                     modifier = Modifier.weight(1f)
                 )
                 TopStoryTile(
                     iconRes = R.drawable.ic_story_printer,
-                    caption = "Справка по
-производству",
+                    caption = "Справка по\nпроизводству",
                     onClick = { onOpenStory(BrifiStory.PRODUCTION) },
                     modifier = Modifier.weight(1f)
                 )
                 TopStoryTile(
                     iconRes = R.drawable.ic_story_checklist,
-                    caption = "Чек-лист
-перед загрузкой",
+                    caption = "Чек-лист\nперед загрузкой",
                     onClick = { onOpenStory(BrifiStory.CHECKLIST) },
                     modifier = Modifier.weight(1f)
                 )
