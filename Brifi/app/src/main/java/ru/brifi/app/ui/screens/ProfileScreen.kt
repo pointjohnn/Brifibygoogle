@@ -242,8 +242,7 @@ fun ProfileScreen(
                             caption = "Средний процент в месяц"
                         )
                         ProfileMetricTile(
-                            value = SheetsParser.formatMoney(finance.avgMonthlyTotalIncome),
-                            caption = "Средний доход в месяц"
+                            text = "Платные/бесплатные\n$paid / $free",
                         )
                     }
 
